@@ -1,0 +1,32 @@
+.card.clickable {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.alert-card {
+    position: relative;
+    border-left: 5px solid #e74c3c;
+}
+
+.badge {
+    background: #e74c3c;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.badge.big {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 4px 10px;
+}

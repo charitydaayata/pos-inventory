@@ -1,0 +1,194 @@
+/* =========================
+   TABLE BASE
+========================= */
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background: #2a5298;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:hover td {
+    background: #f6f8fc;
+}
+
+/* =========================
+   STOCK STATES
+========================= */
+tr.low td {
+    background: #fff6d8;
+}
+
+tr.out td {
+    background: #fde2e5;
+}
+
+/* =========================
+   INLINE FORM (UPDATE STOCK)
+========================= */
+.inline-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.inline-form input {
+    width: 75px;
+    padding: 7px 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.inline-form button {
+    padding: 7px 14px;
+    background: #1e3c72;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.inline-form button:hover {
+    background: #16335d;
+}
+
+/* DISABLED STATE */
+.disabled-btn {
+    background: #ddd;
+    color: #777;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 999px;
+    cursor: not-allowed;
+    font-size: 12px;
+}
+
+/* =========================
+   FILTER BAR
+========================= */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.filter-bar button {
+    background: #1e3c72;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.filter-bar button:hover {
+    background: #16335d;
+}
+
+/* =========================
+   STOCK ACTION BUTTON
+========================= */
+.stock-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.low-stock-btn {
+    background: #2a5298;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 6px 14px rgba(42,82,152,0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.low-stock-btn:hover {
+    background: #1e3c72;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(42,82,152,0.35);
+}
+
+/* =========================
+   PAGINATION
+========================= */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 6px 12px;
+    background: #e0e4eb;
+    text-decoration: none;
+    color: #333;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    background: #1e3c72;
+    color: #fff;
+}
+
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.alert.success {
+    background: #e6f7ee;
+    color: #1e8449;
+    border-left: 5px solid #27ae60;
+}
+
+.alert.error {
+    background: #fde2e5;
+    color: #a93226;
+    border-left: 5px solid #c0392b;
+}
+
+td.empty {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+}

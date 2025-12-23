@@ -1,0 +1,30 @@
+/* Warehouse Search Bar ONLY */
+
+.warehouse-search {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    max-width: 320px;
+}
+
+.warehouse-search input[type="text"] {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.warehouse-search button {
+    padding: 6px 14px;
+    border: none;
+    background: #2f80ed;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.warehouse-search button:hover {
+    background: #2568c9;
+}

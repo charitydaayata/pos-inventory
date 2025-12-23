@@ -1,0 +1,52 @@
+/* wla ni syay labot but do not delete */
+.header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* PO BUTTON (ACTION) */
+.po-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(230,126,34,0.25);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.po-btn:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(230,126,34,0.35);
+}
+
+/* PO SUBMIT BUTTON */
+.po-submit {
+    width: 100%;
+    margin-top: 12px;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 11px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 6px 14px rgba(39,174,96,0.25);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.po-submit:hover {
+    background: #1e8449;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(39,174,96,0.35);
+}
+/* wla ni syay labot but do not delete */
